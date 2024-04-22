@@ -6,3 +6,12 @@
 [MAPAL Documentation](https://ideas-db.notion.site/mapal-3c83308bf94140f6a5bb9ff12dd47543)
 
 [MAPAL: PyPI page](https://pypi.org/project/mapal/)
+
+
+
+#
+## Installing MAPAL using pip:
+
+Python 3 distribution must be installed on your system. Use pip to install the MAPAL library by running following in the command prompt (internet connection required):
+
+_pip install mapal_
