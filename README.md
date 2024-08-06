@@ -3,7 +3,7 @@
 
 [MAPAL Webpage](https://sites.google.com/view/mapal-pylib/)
 
-[MAPAL Documentation](https://ideas-db.notion.site/mapal-3c83308bf94140f6a5bb9ff12dd47543)
+[MAPAL Documentation](https://drive.google.com/file/d/13VsOSYY2TPZ7zP9OJtU1LIWISHsttq9V/view?usp=sharing)
 
 [MAPAL: PyPI page](https://pypi.org/project/mapal/)
 
