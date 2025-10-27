@@ -1,5 +1,6 @@
 # Ignore below files or dir
 .DS_Store
+dist/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
