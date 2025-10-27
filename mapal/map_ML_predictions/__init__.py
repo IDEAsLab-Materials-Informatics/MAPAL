@@ -63,7 +63,7 @@ def HV_binary(A, B, dc=0.01, cAmin=0, cAmax=1, mod_key="M1"):
     
     fig_size = (10,8);
     fs = 28; #fontsize
-    line_width = 10;
+    s_size = 70;
     fig = plt.figure(figsize=(fig_size));
 
     Y = HV_predicted;        
@@ -73,7 +73,7 @@ def HV_binary(A, B, dc=0.01, cAmin=0, cAmax=1, mod_key="M1"):
     x_label = "x [%s at. fraction]" % (A);
     
     plt.title(plot_title, fontsize=fs+10);
-    plt.plot(x, Y, lw=line_width, alpha=0.7, label=y_label);
+    plt.scatter(x, Y, s=s_size, alpha=0.7, label=y_label);
     plt.xlabel(x_label, fontsize=fs+5);
     plt.ylabel(y_label, fontsize=fs+5);
     plt.xlim(cAmin, cAmax);
@@ -126,7 +126,7 @@ def fPhase_binary(A, B, dc=0.01, cAmin=0, cAmax=1, mod_key="M2"):
     
     fig_size = (10,8);
     fs = 28; #fontsize
-    line_width = 10;
+    s_size = 70;
     fig = plt.figure(figsize=(fig_size));
 
     x = df_alloys["xA[A=%s]"%(A)];
@@ -140,7 +140,7 @@ def fPhase_binary(A, B, dc=0.01, cAmin=0, cAmax=1, mod_key="M2"):
     
     for (phase, col) in zip(phases, colors):
         Y = df_alloys[phase];
-        plt.plot(x, Y, lw=line_width, c=col, alpha=0.7, label=phase);
+        plt.scatter(x, Y, s=s_size, c=col, alpha=0.7, label=phase);
 
     plt.xlabel(x_label, fontsize=fs+5);
     plt.ylabel(y_label, fontsize=fs+5);
@@ -322,7 +322,7 @@ def HV_ternary1Cfixed(A, B, C, Cfix, dc=0.01, cAmin=0, cAmax="auto", mod_key="M1
     
     fig_size = (10,8);
     fs = 28; #fontsize
-    line_width = 10;
+    s_size = 70;
     fig = plt.figure(figsize=(fig_size));
 
     Y = HV_predicted;        
@@ -332,7 +332,7 @@ def HV_ternary1Cfixed(A, B, C, Cfix, dc=0.01, cAmin=0, cAmax="auto", mod_key="M1
     x_label = "x [%s at. fraction]" % (A);
 
     plt.title(plot_title, fontsize=fs+10);
-    plt.plot(x, Y, lw=line_width, alpha=0.7, label=y_label);
+    plt.scatter(x, Y, s=s_size, alpha=0.7, label=y_label);
     plt.xlabel(x_label, fontsize=fs+5);
     plt.ylabel(y_label, fontsize=fs+5);
     plt.xlim(cAmin, np.amax(x));
@@ -388,7 +388,7 @@ def fPhase_ternary1Cfixed(A, B, C, Cfix, dc=0.01, cAmin=0, cAmax="auto", mod_key
     
     fig_size = (10,8);
     fs = 28; #fontsize
-    line_width = 10;
+    s_size = 70;
     fig = plt.figure(figsize=(fig_size));
 
     x = df_alloys["xA[A=%s]"%(A)];        
@@ -403,7 +403,7 @@ def fPhase_ternary1Cfixed(A, B, C, Cfix, dc=0.01, cAmin=0, cAmax="auto", mod_key
 
     for (phase, col) in zip(phases, colors):
         Y = df_alloys[phase];
-        plt.plot(x, Y, lw=line_width, c=col, alpha=0.7, label=phase);
+        plt.scatter(x, Y, s=s_size, c=col, alpha=0.7, label=phase);
 
     plt.xlabel(x_label, fontsize=fs+5);
     plt.ylabel(y_label, fontsize=fs+5);
