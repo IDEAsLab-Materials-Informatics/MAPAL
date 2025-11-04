@@ -14,7 +14,7 @@ Python library for mapping features and properties of alloys over compositional 
 
 ### TECHNICAL NOTES
 
-The technical notes for MAPAL (with examples) are available as [supplementary material](https://ars.els-cdn.com/content/image/1-s2.0-S0927025625007037-mmc1.pdf) to the published article.
+The technical notes (with examples) are available in this repo as 'MAPAL_technical_notes.pdf' file. They are also available as [supplementary material](https://ars.els-cdn.com/content/image/1-s2.0-S0927025625007037-mmc1.pdf) to the published article.
 
 <hr />
 
